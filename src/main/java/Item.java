@@ -18,6 +18,10 @@ public class Item {
     }
 
     public double getPrice() {
-        return price;
+        return Math.round(price * 100.0)/100.0;
+    }
+
+    public void setPrice(Double newPrice){
+        this.price = newPrice;
     }
 }
